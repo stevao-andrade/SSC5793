@@ -1,0 +1,121 @@
+[comment encoding = UTF-8 /]
+[module generateCode('http://www.example.org/examsRepository')]
+
+[template public generateElement(anExameSystem : ExamSystem)]
+[comment @main/]
+[file ('fonte.py', false, 'UTF-8')]
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+def create_exams():
+	exams = {}
+[comment Para cada um dos exames que possam existir no repositorio/]
+[for (exam : Exam | anExameSystem.exam)]
+	questions = {}
+[for (q : Question | exam.question)]
+
+	question = {}
+	alternatives = {}
+
+	question = {"id" : [q.id/], "statement": "[q.statement/]"}
+[for (a : Alternative | q.alternative)]
+	alternatives['['/]"[a.id/]"[']'/] = "[a.alternativeStatement/]"	
+[/for] [comment Fim FOR alternativas/]
+	question['['/]'alternatives'[']'/] = alternatives
+	questions['['/][q.id/][']'/] = question 
+[/for] [comment Fim FOR questoes/]
+	
+	exams['['/][exam.id/][']'/]= {"name": "[exam.name/]", "questions" : questions}
+[/for] [comment Fim FOR exames/]		
+	return exams
+
+def create_correct_answers():
+	exams_feedback = {}
+[for (exam : Exam | anExameSystem.exam)]
+	correct_answers = {} 
+[for (question : Question | exam.question)]
+[for (a : Alternative | question.alternative)]
+[if (a.correct)]
+	correct_answers['['/][question.id/][']'/] = ['['/] '[a.id/]', [question.value/] [']'/] 
+[/if]  [comment Fim IF alternativa correta/]
+[/for] [comment Fim FOR alternativas/] 
+[/for] [comment Fim FOR questoes/]
+	exams_feedback['['/][exam.id/][']'/]= {"name": "[exam.name/]", "answers" : correct_answers}
+	print correct_answers
+[/for] [comment Fim FOR exams/]
+	return exams_feedback
+
+def exame_corrector(your_answers, correct_answers):
+	grade = 0
+	for i in range(1,len(correct_answers)+1):
+		your_answer = your_answers['['/]i[']'/]
+		correct_answer = correct_answers['['/]i[']'/]
+		if(your_answer == correct_answer['['/]0[']'/]):
+			grade = grade + correct_answer['['/]1[']'/]
+	
+	print('Your test score: ' + str(grade))
+
+
+if __name__ == '__main__':
+	exam_selected = None
+	your_answers = {}
+	exams = create_exams()
+	exam_names = exams.keys()
+
+	for k in sorted(exam_names):
+		print "%s - %s" % (k, exams['['/]k[']'/]['['/]"name"[']'/])
+	while True:
+		try:
+			exam_selected = int(raw_input("Please chose an exam: "))
+		except ValueError:
+			print("Plase, select a number.")
+			continue
+		else:
+			if exam_selected in exams.keys(): 
+				print("Selected - %s") % (str(exam_selected))
+				break
+			else:
+				print("Please, select a valid exam.")
+				continue
+	exam = exams['['/]exam_selected[']'/]
+	questions = exam['['/]'questions'[']'/]
+	
+	for id, question in questions.iteritems():
+		
+		q_id = question['['/]"id"[']'/]
+		q_statement =  question['['/]"statement"[']'/]
+		alternatives = question['['/]"alternatives"[']'/]
+		
+		print "%d) %s" % (id, q_statement)		
+		print ""
+		for a_id, a_statement in alternatives.iteritems():
+			print "	%s) %s" % (a_id, a_statement)
+			print ""
+			
+		while True:
+			try:
+				a = str(raw_input("Enter the correct alternative: "))
+			except ValueError:
+				print("Plase, select an alternative")
+				continue
+			else:
+				if a in alternatives.keys(): 
+					print("Alternative selected - %s") % (a)
+					print ""
+					break
+				else:
+					print("Please, a valid alternative.")
+					continue
+			
+		your_answers['['/]id[']'/] = a
+			
+	print("Your answers: ")
+	for k,v in your_answers.iteritems():
+		print("Question " + str(k)+": " + str(v))
+	
+	exams_feedback = create_correct_answers()
+	correct_answers =  exams_feedback['['/]exam_selected[']'/]['['/]"answers"[']'/]
+	exame_corrector(your_answers, correct_answers)
+
+[/file]
+[/template]

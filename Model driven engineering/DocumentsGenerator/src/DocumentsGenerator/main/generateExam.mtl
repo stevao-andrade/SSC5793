@@ -1,0 +1,32 @@
+[comment encoding = UTF-8 /]
+[module generateExam('http://www.example.org/examsRepository')]
+
+
+[template public generateElement(anExameSystem : ExamSystem)]
+[comment @main/]
+[file ('prova.md', false, 'UTF-8')]
+[comment Para cada um dos exames que possam existir no repositorio/]
+[for (exam : Exam | anExameSystem.exam)]
+	[comment Uma flag para evitar que exiba mais de um exame, caso existam 2 ou mais cadastrados. Nesse caso, imprime apenas o exame com ID = 0/]
+	[if exam.id = 0]
+[comment Imprime o nome do exame/]
+# [exam.name/]
+
+		[comment Itera cada uma das questões existentes dentro do exame/]
+		[for (question : Question | exam.question)]
+
+[comment enumera a 'i-esinma' questão e printa o statment da mesma /] 
+**Tema: [question.theme/]**.    
+**[i/])** [question.statement/].
+	
+			[comment Itera cada uma das alternativas da questão/]
+			[for (a : Alternative | question.alternative)]
+  [comment enumera as alternativas e printa o statement da mesma/]	
+  [a.id/]) [a.alternativeStatement/].
+
+			[/for]  [comment Fim FOR alternativas/]
+		[/for] [comment Fim FOR questões/]
+	[/if] [comment Fim IF ID exame/]
+[/for] [comment Fim FOR exames/]
+[/file]
+[/template]

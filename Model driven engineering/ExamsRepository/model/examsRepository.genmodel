@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ExamsRepository/src-gen" creationIcons="false"
+    editDirectory="/ExamsRepository.edit/src-gen" editorDirectory="/ExamsRepository.editor/src-gen"
+    modelPluginID="ExamsRepository" modelName="ExamsRepository" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>examsRepository.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="ExamsRepository" disposableProviderFactory="true" ecorePackage="examsRepository.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="examsRepository.ecore#//Theme">
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/softwarePatterns"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/frameworks"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/softwareComponents"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/softwareProductLine"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/SOA"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/SoS"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/MDE"/>
+      <genEnumLiterals ecoreEnumLiteral="examsRepository.ecore#//Theme/other"/>
+    </genEnums>
+    <genClasses ecoreClass="examsRepository.ecore#//Alternative">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Alternative/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Alternative/alternativeStatement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Alternative/correct"/>
+    </genClasses>
+    <genClasses ecoreClass="examsRepository.ecore#//Question">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Question/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Question/statement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Question/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Question/theme"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference examsRepository.ecore#//Question/alternative"/>
+    </genClasses>
+    <genClasses ecoreClass="examsRepository.ecore#//Repository">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Repository/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Repository/name"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference examsRepository.ecore#//Repository/questions"/>
+    </genClasses>
+    <genClasses ecoreClass="examsRepository.ecore#//Exam">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Exam/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Exam/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute examsRepository.ecore#//Exam/totalValue"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference examsRepository.ecore#//Exam/question"/>
+    </genClasses>
+    <genClasses ecoreClass="examsRepository.ecore#//ExamSystem">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference examsRepository.ecore#//ExamSystem/repository"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference examsRepository.ecore#//ExamSystem/exam"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

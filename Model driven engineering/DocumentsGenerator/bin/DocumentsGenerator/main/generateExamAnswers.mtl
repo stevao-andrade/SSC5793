@@ -1,0 +1,29 @@
+[comment encoding = UTF-8 /]
+[module generateExamAnswers('http://www.example.org/examsRepository')]
+
+
+[template public generateElement(anExameSystem : ExamSystem)]
+[comment @main/]
+[file ('gabarito.md', false, 'UTF-8')]
+[comment Para cada um dos exames que possam existir no repositorio/]
+[for (exam : Exam | anExameSystem.exam)]
+	[comment Uma flag para evitar que exiba mais de um exame, caso existam 2 ou mais cadastrados. Nesse caso, imprime apenas o exame com ID = 0/]
+	[if exam.id = 2]
+[comment Imprime o nome do exame/]
+**Gabarito: [exam.name/]**
+
+Questão     | Resposta
+----------- | -------------
+		[comment Itera cada uma das questões existentes dentro do exame/]
+		[for (question : Question | exam.question)]
+			[comment Itera cada uma das alternativas da questão/]
+			[for (a : Alternative | question.alternative)]
+				[if a.correct]
+Questão [question.id/]|  [a.id/] 
+				[/if]
+			[/for]  [comment Fim FOR alternativas/]
+		[/for] [comment Fim FOR questões/]
+	[/if] [comment Fim IF ID exame/]
+[/for] [comment Fim FOR exames/]
+[/file]
+[/template]

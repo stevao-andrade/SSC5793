@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examsRepository:ExamSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:examsRepository="http://www.example.org/examsRepository">
+  <repository>
+    <questions id="1" statement="Marque a alternativa que corresponde a definição de framework" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Um conjunto integrado de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas. " correct="true"/>
+      <alternative id="98" alternativeStatement="Um conjunto distribuído de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas."/>
+    </questions>
+    <questions id="2" statement="Framework do tipo  integração fornecem suporte para:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Apoiar a comunicação e a troca de informações de componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Apoiar o desenvolvimento de aplicações;"/>
+    </questions>
+    <questions id="3" statement="Partes do framework que são projetados para serem genéricos, que podem ser adaptados às necessidades da aplicação” essa definição refere-se a:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Hot spots" correct="true"/>
+      <alternative id="98" alternativeStatement="Frozen spots"/>
+    </questions>
+    <questions id="4" statement="Como pode ser feito o reuso em frameworks do tipo caixa preta?" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Reúso por composição ou definição de interfaces para os componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Reúso por herança e associação dinâmica;"/>
+    </questions>
+    <questions id="5" statement="“Definem soluções para os problemas encontrados nos processos envolvidos na engenharia de software: desenvolvimento, controle de configuração, testes, etc”, a definição anterior está relacionada a qual categoria de padrões." value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Padrões de processo" correct="true"/>
+      <alternative id="98" alternativeStatement="Padrões de interface"/>
+    </questions>
+    <questions id="6" statement="“É uma coletânea de padrões relacionados (talvez relacionados apenas fracamente ou informalmente). Em geral subdivide os padrões em um pequeno número de categorias abrangentes e pode incluir algumas referências cruzadas entre os padrões [Appleton 97].” a definição anterior refere-se há:" value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Catálogos de padrões" correct="true"/>
+      <alternative id="98" alternativeStatement="Coleções de padrões"/>
+    </questions>
+    <questions id="7" statement="Considerando o processo “ Desenvolvimento para reuso”, assinale a alternativa que define corretamente esse processo." value="1.0" theme="Software Components">
+      <alternative id="97" alternativeStatement="Esse processo está interessado no desenvolvimento de componentes ou serviços que serão reusados em outras aplicações. Esse processo geralmente envolve generalizar os componentes existentes" correct="true"/>
+      <alternative id="98" alternativeStatement="Esse é o processo de desenvolvimento de novas aplicações usando componentes e serviços existentes"/>
+    </questions>
+    <questions id="8" statement="Podemos definir engenharia dirigida por modelos como sendo?" value="1.0" theme="Model driven Engineering">
+      <alternative id="97" alternativeStatement="O software é representado como modelos de domínio e modelos de implementação independentes. O código é gerado a partir desses modelos." correct="true"/>
+      <alternative id="98" alternativeStatement="Um sistema gerador incorpora o conhecimento de um tipo de aplicação, e é usado para gerar sistemas nesse domínio a partir de um modelo de sistema fornecido pelo usuário."/>
+    </questions>
+    <questions id="9" statement="“Um tipo de aplicação é generalizado em torno de uma arquitetura comum para que esta possa ser adaptada para diferentes clientes”, a definição anterior refere-se há:" value="1.0" theme="Software Product Line">
+      <alternative id="97" alternativeStatement="Linhas de produtos de software" correct="true"/>
+      <alternative id="98" alternativeStatement="Sistemas são desenvolvidos pela configuração e integração de sistemas de aplicação existentes"/>
+    </questions>
+    <questions id="10" statement="Dentre os principais padrões para arquitetura orientada a serviços para web, temos o padrão  Web Service Definition Language (WSDL), podemos definir esse padrão como sendo:" value="1.0" theme="Serviceoriented Architecture">
+      <alternative id="97" alternativeStatement="É um padrão para a definição de interface de serviço. Define como as operações de serviço (nomes de operação, parâmetros e seus tipos) e associações de serviço devem ser definidas" correct="true"/>
+      <alternative id="98" alternativeStatement="É um padrão de trocas de mensagens que oferece suporte à comunicação entre os serviços. Ele define os componentes essenciais e opcionais das mensagens passadas entre serviços"/>
+    </questions>
+  </repository>
+  <exam name="Prova de reuso">
+    <question id="1" statement="Marque a alternativa que corresponde a definição de framework" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Um conjunto integrado de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas. " correct="true"/>
+      <alternative id="98" alternativeStatement="Um conjunto distribuído de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas."/>
+    </question>
+    <question id="2" statement="Framework do tipo  integração fornecem suporte para:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Apoiar a comunicação e a troca de informações de componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Apoiar o desenvolvimento de aplicações;"/>
+    </question>
+    <question id="3" statement="Partes do framework que são projetados para serem genéricos, que podem ser adaptados às necessidades da aplicação” essa definição refere-se a:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Hot spots" correct="true"/>
+      <alternative id="98" alternativeStatement="Frozen spots"/>
+    </question>
+    <question id="4" statement="Como pode ser feito o reuso em frameworks do tipo caixa preta?" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Reúso por composição ou definição de interfaces para os componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Reúso por herança e associação dinâmica;"/>
+    </question>
+    <question id="5" statement="“Definem soluções para os problemas encontrados nos processos envolvidos na engenharia de software: desenvolvimento, controle de configuração, testes, etc”, a definição anterior está relacionada a qual categoria de padrões." value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Padrões de processo" correct="true"/>
+      <alternative id="98" alternativeStatement="Padrões de interface"/>
+    </question>
+    <question id="6" statement="“É uma coletânea de padrões relacionados (talvez relacionados apenas fracamente ou informalmente). Em geral subdivide os padrões em um pequeno número de categorias abrangentes e pode incluir algumas referências cruzadas entre os padrões [Appleton 97].” a definição anterior refere-se há:" value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Catálogos de padrões" correct="true"/>
+      <alternative id="98" alternativeStatement="Coleções de padrões"/>
+    </question>
+    <question id="7" statement="Considerando o processo “ Desenvolvimento para reuso”, assinale a alternativa que define corretamente esse processo." value="1.0" theme="Software Components">
+      <alternative id="97" alternativeStatement="Esse processo está interessado no desenvolvimento de componentes ou serviços que serão reusados em outras aplicações. Esse processo geralmente envolve generalizar os componentes existentes" correct="true"/>
+      <alternative id="98" alternativeStatement="Esse é o processo de desenvolvimento de novas aplicações usando componentes e serviços existentes"/>
+    </question>
+    <question id="8" statement="Podemos definir engenharia dirigida por modelos como sendo?" value="1.0" theme="Model driven Engineering">
+      <alternative id="97" alternativeStatement="O software é representado como modelos de domínio e modelos de implementação independentes. O código é gerado a partir desses modelos." correct="true"/>
+      <alternative id="98" alternativeStatement="Um sistema gerador incorpora o conhecimento de um tipo de aplicação, e é usado para gerar sistemas nesse domínio a partir de um modelo de sistema fornecido pelo usuário."/>
+    </question>
+    <question id="9" statement="“Um tipo de aplicação é generalizado em torno de uma arquitetura comum para que esta possa ser adaptada para diferentes clientes”, a definição anterior refere-se há:" value="1.0" theme="Software Product Line">
+      <alternative id="97" alternativeStatement="Linhas de produtos de software" correct="true"/>
+      <alternative id="98" alternativeStatement="Sistemas são desenvolvidos pela configuração e integração de sistemas de aplicação existentes"/>
+    </question>
+    <question id="10" statement="Dentre os principais padrões para arquitetura orientada a serviços para web, temos o padrão  Web Service Definition Language (WSDL), podemos definir esse padrão como sendo:" value="1.0" theme="Serviceoriented Architecture">
+      <alternative id="97" alternativeStatement="É um padrão para a definição de interface de serviço. Define como as operações de serviço (nomes de operação, parâmetros e seus tipos) e associações de serviço devem ser definidas" correct="true"/>
+      <alternative id="98" alternativeStatement="É um padrão de trocas de mensagens que oferece suporte à comunicação entre os serviços. Ele define os componentes essenciais e opcionais das mensagens passadas entre serviços"/>
+    </question>
+  </exam>
+  <exam id="1" name="Exame de teste A">
+    <question id="1" statement="Marque a alternativa que corresponde a definição de framework" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Um conjunto integrado de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas. " correct="true"/>
+      <alternative id="98" alternativeStatement="Um conjunto distribuído de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas."/>
+    </question>
+    <question id="2" statement="Framework do tipo  integração fornecem suporte para:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Apoiar a comunicação e a troca de informações de componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Apoiar o desenvolvimento de aplicações;"/>
+    </question>
+    <question id="3" statement="Partes do framework que são projetados para serem genéricos, que podem ser adaptados às necessidades da aplicação” essa definição refere-se a:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Hot spots" correct="true"/>
+      <alternative id="98" alternativeStatement="Frozen spots"/>
+    </question>
+    <question id="4" statement="Como pode ser feito o reuso em frameworks do tipo caixa preta?" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Reúso por composição ou definição de interfaces para os componentes;"/>
+      <alternative id="98" alternativeStatement="Reúso por herança e associação dinâmica;" correct="true"/>
+    </question>
+    <question id="5" statement="“Definem soluções para os problemas encontrados nos processos envolvidos na engenharia de software: desenvolvimento, controle de configuração, testes, etc”, a definição anterior está relacionada a qual categoria de padrões." value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Padrões de processo" correct="true"/>
+      <alternative id="98" alternativeStatement="Padrões de interface"/>
+    </question>
+    <question id="6" statement="“É uma coletânea de padrões relacionados (talvez relacionados apenas fracamente ou informalmente). Em geral subdivide os padrões em um pequeno número de categorias abrangentes e pode incluir algumas referências cruzadas entre os padrões [Appleton 97].” a definição anterior refere-se há:" value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Catálogos de padrões" correct="true"/>
+      <alternative id="98" alternativeStatement="Coleções de padrões"/>
+    </question>
+    <question id="7" statement="Considerando o processo “ Desenvolvimento para reuso”, assinale a alternativa que define corretamente esse processo." value="1.0" theme="Software Components">
+      <alternative id="97" alternativeStatement="Esse processo está interessado no desenvolvimento de componentes ou serviços que serão reusados em outras aplicações. Esse processo geralmente envolve generalizar os componentes existentes"/>
+      <alternative id="98" alternativeStatement="Esse é o processo de desenvolvimento de novas aplicações usando componentes e serviços existentes" correct="true"/>
+    </question>
+    <question id="8" statement="Podemos definir engenharia dirigida por modelos como sendo?" value="1.0" theme="Model driven Engineering">
+      <alternative id="97" alternativeStatement="O software é representado como modelos de domínio e modelos de implementação independentes. O código é gerado a partir desses modelos."/>
+      <alternative id="98" alternativeStatement="Um sistema gerador incorpora o conhecimento de um tipo de aplicação, e é usado para gerar sistemas nesse domínio a partir de um modelo de sistema fornecido pelo usuário." correct="true"/>
+    </question>
+    <question id="9" statement="“Um tipo de aplicação é generalizado em torno de uma arquitetura comum para que esta possa ser adaptada para diferentes clientes”, a definição anterior refere-se há:" value="1.0" theme="Software Product Line">
+      <alternative id="97" alternativeStatement="Linhas de produtos de software" correct="true"/>
+      <alternative id="98" alternativeStatement="Sistemas são desenvolvidos pela configuração e integração de sistemas de aplicação existentes"/>
+    </question>
+    <question id="10" statement="Dentre os principais padrões para arquitetura orientada a serviços para web, temos o padrão  Web Service Definition Language (WSDL), podemos definir esse padrão como sendo:" value="1.0" theme="Serviceoriented Architecture">
+      <alternative id="97" alternativeStatement="É um padrão para a definição de interface de serviço. Define como as operações de serviço (nomes de operação, parâmetros e seus tipos) e associações de serviço devem ser definidas" correct="true"/>
+      <alternative id="98" alternativeStatement="É um padrão de trocas de mensagens que oferece suporte à comunicação entre os serviços. Ele define os componentes essenciais e opcionais das mensagens passadas entre serviços"/>
+    </question>
+  </exam>
+  <exam id="2" name="Exame de teste B">
+    <question id="1" statement="Marque a alternativa que corresponde a definição de framework" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Um conjunto integrado de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas. "/>
+      <alternative id="98" alternativeStatement="Um conjunto distribuído de artefatos de software (como classes, objetos e componentes) que colaboram para fornecer uma arquitetura reusável para uma família de aplicações relacionadas." correct="true"/>
+    </question>
+    <question id="2" statement="Framework do tipo  integração fornecem suporte para:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Apoiar a comunicação e a troca de informações de componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Apoiar o desenvolvimento de aplicações;"/>
+    </question>
+    <question id="3" statement="Partes do framework que são projetados para serem genéricos, que podem ser adaptados às necessidades da aplicação” essa definição refere-se a:" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Hot spots"/>
+      <alternative id="98" alternativeStatement="Frozen spots" correct="true"/>
+    </question>
+    <question id="4" statement="Como pode ser feito o reuso em frameworks do tipo caixa preta?" value="1.0" theme="Frameworks">
+      <alternative id="97" alternativeStatement="Reúso por composição ou definição de interfaces para os componentes;" correct="true"/>
+      <alternative id="98" alternativeStatement="Reúso por herança e associação dinâmica;"/>
+    </question>
+    <question id="5" statement="“Definem soluções para os problemas encontrados nos processos envolvidos na engenharia de software: desenvolvimento, controle de configuração, testes, etc”, a definição anterior está relacionada a qual categoria de padrões." value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Padrões de processo"/>
+      <alternative id="98" alternativeStatement="Padrões de interface" correct="true"/>
+    </question>
+    <question id="6" statement="“É uma coletânea de padrões relacionados (talvez relacionados apenas fracamente ou informalmente). Em geral subdivide os padrões em um pequeno número de categorias abrangentes e pode incluir algumas referências cruzadas entre os padrões [Appleton 97].” a definição anterior refere-se há:" value="1.0" theme="Software Patterns">
+      <alternative id="97" alternativeStatement="Catálogos de padrões" correct="true"/>
+      <alternative id="98" alternativeStatement="Coleções de padrões"/>
+    </question>
+    <question id="7" statement="Considerando o processo “ Desenvolvimento para reuso”, assinale a alternativa que define corretamente esse processo." value="1.0" theme="Software Components">
+      <alternative id="97" alternativeStatement="Esse processo está interessado no desenvolvimento de componentes ou serviços que serão reusados em outras aplicações. Esse processo geralmente envolve generalizar os componentes existentes" correct="true"/>
+      <alternative id="98" alternativeStatement="Esse é o processo de desenvolvimento de novas aplicações usando componentes e serviços existentes"/>
+    </question>
+    <question id="8" statement="Podemos definir engenharia dirigida por modelos como sendo?" value="1.0" theme="Model driven Engineering">
+      <alternative id="97" alternativeStatement="O software é representado como modelos de domínio e modelos de implementação independentes. O código é gerado a partir desses modelos."/>
+      <alternative id="98" alternativeStatement="Um sistema gerador incorpora o conhecimento de um tipo de aplicação, e é usado para gerar sistemas nesse domínio a partir de um modelo de sistema fornecido pelo usuário." correct="true"/>
+    </question>
+    <question id="9" statement="“Um tipo de aplicação é generalizado em torno de uma arquitetura comum para que esta possa ser adaptada para diferentes clientes”, a definição anterior refere-se há:" value="1.0" theme="Software Product Line">
+      <alternative id="97" alternativeStatement="Linhas de produtos de software" correct="true"/>
+      <alternative id="98" alternativeStatement="Sistemas são desenvolvidos pela configuração e integração de sistemas de aplicação existentes"/>
+    </question>
+    <question id="10" statement="Dentre os principais padrões para arquitetura orientada a serviços para web, temos o padrão  Web Service Definition Language (WSDL), podemos definir esse padrão como sendo:" value="1.0" theme="Serviceoriented Architecture">
+      <alternative id="97" alternativeStatement="É um padrão para a definição de interface de serviço. Define como as operações de serviço (nomes de operação, parâmetros e seus tipos) e associações de serviço devem ser definidas" correct="true"/>
+      <alternative id="98" alternativeStatement="É um padrão de trocas de mensagens que oferece suporte à comunicação entre os serviços. Ele define os componentes essenciais e opcionais das mensagens passadas entre serviços"/>
+    </question>
+  </exam>
+</examsRepository:ExamSystem>
